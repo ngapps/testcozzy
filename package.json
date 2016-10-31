@@ -1,0 +1,8 @@
+{
+  "name": "megder-demo-app",
+  "cozy-type": "static",
+  "cozy-displayName": "megder-demo-app App's Name",
+  "version": "1.0.0",
+  "description": "megder-demo-app app's description",
+  "icon-path": "main_icon.png"
+}
