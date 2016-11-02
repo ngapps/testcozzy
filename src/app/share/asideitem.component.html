@@ -1,0 +1,11 @@
+<span *ngIf="item.heading">{{item.name}}</span>
+ <a *ngIf="!item.heading"  title="{{item.name}}" [routerLink]="[item.link]">
+      <div class="pull-right" *ngIf="item.alert"  class="item.label || \'label label-success\'">{{item.alert}}</div>
+      <em class="{{item.icon}}" *ngIf="item.icon"></em>
+      <span>{{item.name}}</span>
+</a>
+<ul class="nav sidebar-subnav" *ngIf="item.submenu">
+  	<li *ngFor="let item of item.submenu"    >
+	    <cz-asideitem [item]="item"></cz-asideitem>
+	</li>
+</ul>
